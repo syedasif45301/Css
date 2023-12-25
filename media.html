@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+
+        .con{
+            background-color: black;
+            color:white;
+        }
+
+        @media only screen and (max-width:602px)
+        {
+            .con{
+                background-color:blue;
+                color:chartreuse;
+            }
+        }
+
+        .boxes{
+            border: 2px solid black;
+            padding: 2px;
+            margin:3px;
+        }
+
+        .box1{
+            background-color: aqua;
+        }
+      
+        .box2{
+            background-color: aquamarine;
+        }
+
+        .box3{
+            background-color: blanchedalmond;
+        }
+
+        @media only screen and (min-width:596px){
+            .boxes{
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim possimus in mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptates, sapiente hic voluptatibus
+            ullam nobis unde iure officia! Exercitationem eaque tenetur eveniet recusandae repudiandae asperiores aut,
+            incidunt labore reiciendis. 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim possimus in mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptates, sapiente hic voluptatibus
+            ullam nobis unde iure officia! Exercitationem eaque tenetur eveniet recusandae repudiandae asperiores aut,
+            incidunt labore reiciendis. 
+            incidunt labore reiciendis. 
+        </p>
+    </div>
+
+    <div class="boxes box1">Hello World...box1</div>
+    <div class="boxes  box2">Hello World...box2</div>
+    <div class="boxes   box3">Hello World...box3</div>
+</body>
+
+</html>

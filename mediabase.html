@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Practice</title>
+    <style>
+        .container{
+            background-color: aliceblue;
+            height:70vh;
+            width:90vw;
+        }
+        .box{
+            margin:8px;
+            background-color: antiquewhite;
+            width:74px;
+            height:74px;
+            border:2px solid black;
+            border-radius: 3px;
+        }
+
+        @media screen and (max-width:640px){
+            .container{
+              
+                display: flex;
+                flex-direction: column;
+            
+            }
+          
+        }
+
+        @media screen and (min-width:640px){
+            .container{
+       
+                display: flex;
+                flex-direction:row;
+            }
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+        <div class="box b5">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-3 Practice</title>
+    <style>
+        .container{
+            background-color: aliceblue;
+            height: 95vh;
+            width: 98vw;
+            gap:20px;
+            display: grid;
+            grid-template-columns:100px 450px 100px 100px;
+            grid-template-rows: repeat(1fr,4);
+            
+        }
+        .item{
+            background-color: bisque;
+            
+        }
+        
+        .left{
+            border: 2px solid black;
+            border-style: dashed;
+            grid-row: 1/5;
+            background-color: lightpink;
+        }
+
+        .header{
+            border: 2px solid black;
+            border-style: dashed;
+            grid-column: 2/6;
+            background-color:aquamarine;
+        }
+
+        .main{
+            border: 2px solid black;
+            border-style: dashed;
+            grid-column: 2/5;
+            grid-row: 2/4;
+            background-color:antiquewhite;
+
+        }
+
+        .right{
+            border: 2px solid black;
+            border-style: dashed;
+            /* grid-column: 5/6; */
+            grid-row: 2/4;
+            background-color:tomato;
+
+        }
+
+        .footer{
+            border: 2px solid black;
+            border-style: dashed;
+            grid-column: 2/6;
+            background-color:lightskyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item left">Left</div>
+        <div class="item header">Header</div>
+        <div class="item main">Main</div>
+        <div class="item right">Right</div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+</html>

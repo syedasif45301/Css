@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position CSS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 2px;
+        }
+        .container{
+            border: 2px solid black;
+            height: 40vh;
+            width: 92vw;
+            background-color: azure;
+            position:relative;
+          
+        }
+        .cls{
+            /* background-color: lightblue; */
+            border: 2px solid green;
+            margin:8px;
+            padding:10px;
+            box-sizing: border-box;
+            text-shadow: 2px 2px 6px darkblue;
+
+           
+        }
+
+        .cls1{
+            text-align: center;
+            background-color: aqua;
+            height: 8vh;
+            width:87vw;
+            position:absolute;
+            top:22px;
+            box-shadow: 2px 2px 8px red;
+            /* z-index: 1; */
+         
+        }
+
+        .cls2{
+            text-align: center;
+            background-color:aquamarine ;
+            height: 8vh;
+            width:87vw;
+            position:absolute;
+            top:52px;
+            left:8px;
+            box-shadow: 2px 2px 8px blue;
+            /* z-index: 2; */
+        }
+
+        .cls3{
+            text-align: center;
+            background-color: blueviolet;
+            height: 8vh;
+            width:87vw;
+            position:absolute;
+            top:82px;
+            left:15px;
+            box-shadow: 2px 2px 8px yellow;
+            /* z-index: 3; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="cls cls1">I am one</div>
+        <div class="cls cls2">I am two</div>
+        <div class="cls cls3">I am three</div>
+    </div>
+</body>
+</html>

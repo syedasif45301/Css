@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-5 Practice</title>
+    <style>
+        .container{
+            margin:5px;
+            padding:10px;
+            /* background-color:lightblue; */
+            height:92vh;
+            width: 45vw;
+            
+            display: grid;
+            grid-template-columns: 70px 100px 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+        }
+        .item{
+            border:2px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .empty{
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .s1{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s2{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s3{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s4{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s5{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s6{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+        .s7{
+            background-color:lightgray;
+            width:75px;
+            height:60px;
+        }
+
+        .time{
+            border:2px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .t1{
+            grid-column: 1/2;
+            grid-row: 2/3;
+    
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t2{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t3{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t4{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        
+            background-color:coral;
+            width:55px;
+            height:60px;
+        }
+        .t5{
+            grid-column: 1/2;
+            grid-row: 6/7;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t6{
+            grid-column: 1/2;
+            grid-row: 7/8;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t7{
+            grid-column: 1/2;
+            grid-row: 8/9;
+            background-color:coral;
+            width:55px;
+            height:60px;
+        }
+        .t8{
+            grid-column: 1/2;
+            grid-row: 9/10;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t9{
+            grid-column: 1/2;
+            grid-row: 10/11;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+        .t10{
+            grid-column: 1/2;
+            grid-row: 11/12;
+            background-color: lightgray;
+            width:55px;
+            height:60px;
+        }
+
+        .box{
+            grid-template-columns: 2fr 1fr 2fr 2fr;
+            grid-template-rows: 3fr 4fr 1fr 6fr;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin:5px;
+        
+        }
+        .b1{
+            grid-column: 2/4;
+            grid-row: 2/5;
+            border: 2px;
+            border-radius: 10px;
+            background-color: rgb(127, 214, 255);
+        }
+        .break1{
+            grid-column: 2/4;
+            grid-row: 5/6;
+            background-color: lightgray;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .b2{
+            grid-column: 2/5;
+            grid-row: 6/8;
+            border: 2px;
+            border-radius: 10px;
+            background-color: rgb(127, 214, 255);
+        }
+        .break2{
+            grid-column: 2/9;
+            grid-row: 8/9;
+            background-color: lightgray;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .b3{
+            grid-column: 2/4;
+            grid-row: 9/12;
+            border: 2px;
+            border-radius: 10px;
+            background-color: rgb(127, 214, 255);
+        }
+        .b4{
+            grid-column: 4/5;
+            grid-row: 2/6;
+            border: 2px;
+            border-radius: 10px;
+            background-color:lightgreen;
+
+        }
+        .b5{
+            grid-column: 5/7;
+            grid-row: 2/3;
+            border: 2px;
+            border-radius: 10px;
+            background-color:lightpink;
+
+        }
+        .break3{
+            grid-column: 5/7;
+            grid-row: 3/4;
+            background-color: lightgray;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .b6{
+            grid-column: 5/7;
+            grid-row: 4/8;
+            border: 2px;
+            border-radius: 10px;
+            background-color:lightpink;
+        }
+        .b8{
+            grid-column: 4/7;
+            grid-row: 10/12;
+            border: 2px;
+            border-radius: 10px;
+            background-color:lightgreen;
+        }
+        .b9{
+            grid-column: 7/9;
+            grid-row: 2/8;
+            border: 2px;
+            border-radius: 10px;
+            background-color:rgb(224, 224, 112);
+        }
+        .b10{
+            grid-column: 7/9;
+            grid-row: 9/12;
+            border: 2px;
+            border-radius: 10px;
+            background-color:rgb(224, 224, 112);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item empty"></div>
+        <div class="item s1">Stage-1</div>
+        <div class="item s2">Stage-2</div>
+        <div class="item s3">Stage-3</div>
+        <div class="item s4">Stage-4</div>
+        <div class="item s5">Stage-5</div>
+        <div class="item s6">Stage-6</div>
+        <div class="item s7">Stage-7</div>
+
+
+        <div class="time t1">10:00</div>
+        <div class="time t2">10:30</div>
+        <div class="time t3">11:00</div>
+        <div class="time t4">11:30</div>
+        <div class="time t5">12:00</div>
+        <div class="time t6">12:30</div>
+        <div class="time t7">01:00</div>
+        <div class="time t8">01:30</div>
+        <div class="time t9">02:00</div>
+        <div class="time t10">02:30</div>
+
+        <div class="box b1">
+            <b>Talk-1</b>
+            
+        </div>
+        
+        <div class="box break1"><b>BREAK</b></div>
+        <div class="box b2"><b>Talk 2 & Talk 3</b></div>
+        
+        <div class="box break2"><b>BREAK</b></div>
+
+        <div class="box b3"><b>Talk 7</b></div>
+        <div class="box b4"><b>Talk 4</b></div>
+        <div class="box b5"><b>Talk 4</b></div>
+        <div class="box break3"><b>BREAK</b></div>
+        <div class="box b6"><b>Talk 6</b></div>
+        <div class="box b8"><b>Talk 8</b></div>
+        <div class="box b9"><b>Talk 9</b></div>
+        <div class="box b10"><b>Talk 10</b></div>
+    </div>
+
+    
+</body>
+</html>

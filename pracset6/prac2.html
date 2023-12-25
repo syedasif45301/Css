@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox property</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            border: 2px solid blue;
+            background-color: aqua;
+            height:30vh;
+            display: flex; 
+            flex-direction: row-reverse;
+            align-items:flex-start;
+            justify-content:right;
+        }
+
+        .items{
+        
+            height:40px;
+            width:40px;
+            border:2px solid red;
+            background-color: aquamarine;
+            margin:4px;
+            padding:6px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+#d{
+    background-color: cadetblue;
+} 
+
+*{
+    /* background-color: antiquewhite; */
+    font-size: medium;
+
+}
+
+footer{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cls{
+    background-color:darkgray;
+    font-style: italic;
+    font-weight: 200;
+}
+
+section{
+    color:blueviolet;
+}
+
+a:hover{
+    color:brown;
+}
+

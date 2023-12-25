@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header ul {
+            /* padding:3px; */
+            background-color: darkblue;
+            color: white;
+            height: 10vh;
+
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: sticky;
+        }
+
+
+        a:hover{
+            text-decoration: none;
+            background-color: black;
+            padding:4px;
+            border: 2px solid white;
+            border-radius: 3px;
+        }
+
+        body {
+            background-color: rgb(99, 99, 243);
+            height: 90vh;
+
+        }
+
+        .parent {
+            padding: 4px;
+            margin: 3px;
+            background-color: rgb(121, 255, 255);
+            height: 88vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .one {
+            margin: 4px;
+            border: 2px solid black;
+            height: 50vh;
+            width: 45vw;
+            background-color: brown;
+        }
+
+        .two {
+            margin: 4px;
+            border: 2px solid black;
+            height: 50vh;
+            width: 45vw;
+            background-color: blueviolet;
+        }
+
+        .logo {
+            padding: 4px;
+            margin: 3px;
+       
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <li> <i class="ri-profile-line"></i> Logo</li>
+                   
+                </div>
+
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parent">
+        <div class="one">1</div>
+        <div class="two">2</div>
+    </div>
+
+</body>
+
+</html>

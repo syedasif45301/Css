@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --color: darkblue;
+            --pricolor: rgb(87, 87, 233);
+            --seccolor: red;
+            --tercolor: green;
+            --forcolor: yellow;
+            --txtcolor: white;
+            --fcolor: gray;
+        }
+
+        body {
+            background-color: lightblue;
+
+        }
+
+        header {
+            background-color: var(--color);
+            height: 4vh;
+            padding: 4px;
+            position: sticky;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            color: var(--txtcolor);
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 12px;
+            margin: 5px;
+            background-color: var(--pricolor);
+            height: 80vh;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+
+        .parent {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .one {
+            padding: 5px;
+            margin: 4px;
+            width: 45vw;
+            height: 40vh;
+            background-color: var(--seccolor);
+            box-sizing: border-box;
+        }
+
+        .two {
+            padding: 5px;
+            margin: 4px;
+            width: 45vw;
+            height: 40vh;
+            background-color: var(--tercolor);
+            box-sizing: border-box;
+        }
+
+        .cir{
+          
+         
+          display:flex;
+          float:right;
+          flex-direction:row-reverse;
+          justify-content:flex-end;
+          width:28px;
+          height: 45px;
+
+          
+      }
+
+      
+      .latest{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+
+      .mincir{
+         position: fixed;
+        /* background-color: white; */
+            border:2px solid brown;
+          border-radius: 18px;
+          background-color: var(--txtcolor);
+          padding:3px;
+          margin: 2px;
+          height: 25px;
+          width:35px;
+      }
+
+
+      
+
+
+        .new {
+            margin: 10px;
+            padding: 10px;
+            height: 10vh;
+            width: 60vw;
+            border: 2px solid black;
+            border-radius: 55px;
+            background-color: var(--forcolor);
+            display: flex;
+            text-align: center;
+            align-items: center;
+      
+        }
+
+        
+     
+
+        footer{
+            background-color: var(--fcolor);
+            height: 10vh;
+            text-align: center;
+            padding: 5px;
+            margin:3px;
+    
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a> Home</a> </li>
+                <li> <a>Services</a> </li>
+                <li> <a>Products</a> </li>
+                <li> <a>Contact</a> </li>
+                <li><a>AboutUs</a> </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="d1">
+
+        <div class="parent">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+    </div>
+
+    <div class="latest">
+    <div class="new">
+        <h2>Welcome to this Sigma Web Development Express</h2>
+
+    </div>
+
+    <div class="cir">
+        <!-- <img src="images/c.png" alt="img"> -->
+
+        <div class="mincir">logo</div>
+    </div>
+    </div>
+
+    <footer>
+        <p>This is footer section</p>
+    </footer>
+
+
+</body>
+
+</html>

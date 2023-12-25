@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox css exercise 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color:white;
+            height: 15vh;
+            margin: 4px;
+            padding: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+
+
+        }
+
+        .head {
+            
+            width: 58vw;
+            height: 12vh;
+            margin: 4px;
+            padding: 5px;
+            box-sizing: border-box;
+            align-items: center;
+
+
+
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .head div {
+            display: flex;
+
+        }
+
+        .head .head2 {
+            display: flex;
+        }
+
+        main p {
+            margin: 10px;
+            padding: 55px;
+            font-size: 50px;
+            text-align: center;
+            /* border:2px solid black; */
+        }
+
+        .one {
+            /* border:2px solid black; */
+            margin: 5px;
+            padding: 8px;
+            color: grey;
+            text-align: center;
+            font-size: large;
+            height: 15vh;
+        }
+
+        .one span {
+            background-color: #00b6d1;
+            color: white;
+            padding: 5px;
+            margin: 4px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            ;
+        }
+
+
+        .two {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* .parent {
+            border: 2px solid black;
+          
+         
+        } */
+
+        .cart{
+        
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            gap:20px;
+        }
+        .cart  .new{
+            
+            background-color: rgb(245, 245, 245);
+            height: 130px;
+            width: 200px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        #d1 {
+            background-color: #00b6d1;
+        }
+
+        #d2 {
+            background-color: aquamarine;
+        }
+
+        footer{
+            background-color: rgb(245, 245, 245);;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+            <img src="images/logo.webp" alt="img" title="UltraEdit">
+        </div>
+
+
+        <div class="head">
+
+            <ul>
+                <li>Products<i class="ri-arrow-drop-down-line"></i></li>
+                <li>Pricing<i class="ri-arrow-drop-down-line"></i></li>
+                <li>Resources<i class="ri-arrow-drop-down-line"></i></li>
+                <li>About Us<i class="ri-arrow-drop-down-line"></i></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <p>Download <b>UltraEdit</b> for Windows</p>
+
+
+    </main>
+
+    <div class="one">
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.</p> <br>
+        <span>DOWNLOAD MAC OR LINUX VERSION</span>
+    </div>
+
+
+    <div class="two">
+        <div class="log1">
+            <img src="images/logo2.PNG" alt="">
+        </div>
+        <div class="log2">
+            <p>Download UltraEdit <span>v2023.2(released 12/15/2023) | Hotfix</span></p>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+      
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+      
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+        <div class="cart">
+            <div class="new">
+                <b>English</b> 
+                <br> <br><br>
+            
+            <span id="d1">Download 32-bit</span> <br> <br>
+            <span id="d2">Download 64-bit</span>
+        </div>
+      
+        
+
+
+        </div>
+    </div>
+
+
+
+</body> 
+
+</html>

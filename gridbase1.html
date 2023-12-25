@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+    
+    
+
+    .container{
+        margin:4px;
+        padding: 5px;
+        border: 3px solid black;
+        background-color: lightblue;
+        height: 90vh;
+        width: 90vw;
+        gap:5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+       
+    }
+    .item{
+        border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: larger;
+    }
+
+    .item1{
+        grid-column: 1/4;
+        background-color: darkblue;
+    }
+       
+    .item2{
+        grid-row: 2/4;
+        background-color:darkcyan;
+    }
+    .item3{
+        grid-column: 2/4;
+        background-color: blueviolet;
+    }
+    .item4{
+        grid-column: 2/3;
+        background-color: cornflowerblue;
+    }
+    .item5{
+        grid-column: 3/4;
+        background-color: cornflowerblue;
+    }
+    
+    .item6{
+        grid-column: 1/4;
+        background-color: darkblue;
+    }
+
+    @media only screen and (min-width:800px)
+    {
+   
+    }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item item1">header</div>
+        <div class="item item2">sidebar</div>
+        <div class="item item3">box1</div>
+        <div class="item item4">box2</div>
+        <div class="item item5">box3</div>
+        <div class="item item6">footer</div>
+    </div>
+</body>
+</html>

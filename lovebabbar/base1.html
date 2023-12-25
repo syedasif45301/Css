@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food recipe</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .head{
+            padding:15px;
+            
+            background-color:rgba(247, 162, 128, 0.863);
+            display: grid;
+            grid-template-columns: 5fr 1fr 1fr 1fr;
+            justify-content:space-between;
+            align-items: center;
+            height:6vh;
+            gap:15px;
+            position:sticky;
+        }
+     
+        .sup{
+            border:2px solid black;
+            margin:10px auto 10px;
+            background-color:rgba(247, 162, 128, 0.863);
+            /* height:90vh; */
+            width:80vw;
+            display: grid;
+            justify-content: space-evenly;
+            
+            
+        }
+
+        .i{
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: solid ;
+        }
+        .i1{
+            color:darkred;
+            font-variant:small-caps;
+            font-size:50px;
+        }
+
+        .sub1{
+            /* border:2px solid black; */
+            margin:auto ;
+            background-color: antiquewhite;
+            /* height:40vh; */
+            width:70vw;
+            gap:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sub2{
+            /* border:2px solid black; */
+            margin: auto ;
+            background-color: antiquewhite;
+            /* height:40vh; */
+            width:70vw;
+            gap:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub3{
+            /* border:2px solid black; */
+            margin:auto ;
+            background-color: antiquewhite;
+            /* height:40vh; */
+            width:70vw;
+            gap:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .s{
+            margin:24px;
+            /* background-color: aquamarine; */
+            /* height:20vh; */
+            width:45vw;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black; */
+        }
+
+        h1,h3{
+            color:darkred;
+            text-decoration: underline;
+        }
+       
+        footer{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(247, 162, 128, 0.863);
+            height:10vh;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: solid ;
+        }
+        img{
+            box-shadow: 5px 5px 15px 5px lightsalmon;
+        }
+
+        @media only screen and (max-width:780px){
+
+            .sub1{
+                display: flex;
+                flex-direction: column;
+            }
+            .sub2{
+                display: flex;
+                flex-direction: column;
+            }
+            .sub3{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="i i1">FOODY</div>
+        <div class="i i2">Dishes</div>
+        <div class="i i3">Recipies</div>
+        <div class="i i4">Contact</div>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="sup">
+            <div class="sub1">
+                <div class=" s s1">
+                    <h1>Biryani:</h1>
+                        <p>Biryani is a popular and flavorful Indian rice dish that originated in South Asia.</p> <br>
+                        <h3>Ingredients:</h3>
+                        <li>Chicken pieces</li>
+                        <li>Basmati rice</li>
+                        <li>Onions</li>
+                        <li>Red chilli</li>
+                        <li>Salt</li>
+                    
+                    <p></p>
+                </div>
+                <div class=" s s2">
+                    <img src="images/biryani.jpg" alt="biryani" title="biryani" height=" 159px" width="280px">
+                </div>
+            </div>
+            <hr>
+            <div class="sub2">
+                <div class="s s1">
+                    <h1>Rice Meal:</h1>
+                    <p>Certainly! Rice is a staple food that serves as a primary dietary component for a large portion of the world's population.</p>
+                    <br>
+                    <h3>Ingredients:</h3>
+                    <li>Rice</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                   
+                </div>
+                <div class="s s2">
+                    <img src="images/rice.webp" alt="rice" title="rice"  height="159px" width="280px">
+                </div>
+            </div>
+            <hr>
+            <div class="sub3">
+                <div class="s s1">
+                    <h1>Meetha:</h1>
+                    <p>"Meetha" is a term in Hindi and Urdu that translates to "sweet" in English. Popular sweet dishes in South Asian.</p>
+                    <br>
+                    <h3>Ingredients:</h3>
+                    <li>Sugar</li>
+                    <li>Khowa</li>
+                    <li>Ghee</li>
+                    <li>Milk</li>
+                    <li>Paneer</li>
+                </div>
+                <div class="s s2">
+                    <img src="images/sweet.webp" alt="sweet"  title="sweet"  height="159px" width="280px">
+                </div>
+            </div>
+            <hr>
+
+            <div class="sub1">
+                <div class=" s s1">
+                    <h1>Mandi:</h1>
+                        <p>"Mandi" is a traditional rice and meat dish that is popular in many Middle Eastern countries, including Saudi Arabia.</p> <br>
+                        <h3>Ingredients:</h3>
+                        <li>Meat</li>
+                        <li>Basmati rice</li>
+                        <li>Onions</li>
+                        <li>Red chilli</li>
+                        <li>Salt</li>
+                    
+                    <p></p>
+                </div>
+                <div class=" s s2">
+                    <img src="images/mandi.jpg" alt="biryani" title="mandi" height=" 159px" width="280px">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="sub2">
+                <div class="s s1">
+                    <h1>Kabab Roti:</h1>
+                    <p>"Kabab Roti" generally refers to a combination of kebabs and flatbread (roti) in South Asian cuisine.</p>
+                    <br>
+                    <h3>Ingredients:</h3>
+                    <li>Meat</li>
+                    <li>Atta</li>
+                    <li>Salt</li>
+                   
+                </div>
+                <div class="s s2">
+                    <img src="images/kaba.jpg" alt="rice" title="Kabab"  height="159px" width="280px">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="sub3">
+                <div class="s s1">
+                    <h1>Ice-cream:</h1>
+                    <p>"Ice cream" refers to a frozen dessert made from dairy products, typically cream and milk, combined with sugar and other flavorings.</p>
+                    <br>
+                    <h3>Ingredients:</h3>
+                    <li>Sugar</li>
+                    <li>Khowa</li>
+                    <li>Ghee</li>
+                    <li>Milk</li>
+                    <li>Paneer</li>
+                </div>
+                <div class="s s2">
+                    <img src="images/ice.webp" alt="sweet"  title="icecream"  height="159px" width="280px">
+                </div>
+            </div>
+        </div>
+    
+    <hr>
+    <footer>
+        FOOTER SECTION...............
+    </footer>
+    
+</body>
+</html>

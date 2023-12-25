@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-2 Practice</title>
+    <style>
+        .container{
+            background-color:aquamarine;
+            height:90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+
+        }
+        .item{
+            background-color:goldenrod;
+            margin:3px;
+            padding:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        .header{
+            grid-column: 1/4;
+        }
+        .nav{
+            grid-row: 2/3;
+        }
+        .contents{
+            grid-column: 2/3;
+        }
+        .aside{
+            grid-column: 3/4;
+        }
+        .footer{
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">HEADER</div>
+        <div class="item nav">NAV</div>
+        <div class="item contents">CONTENTS</div>
+        <div class="item aside">ASIDE</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+</html>

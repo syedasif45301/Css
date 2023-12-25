@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Nav</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+                }
+        :root{
+            --color:blue;
+            --pricolor:grey;
+            --seccolor:red;
+            --premcolor:gold;
+            --bascolor:white;
+            --tricolor:orange;
+            --lightcolor:rgb(231, 127, 127);
+            --txtcolor:rgb(253, 253, 253);
+
+        }
+        header{
+            padding: 5px 0px;
+            height:4vh;
+            background-color: var(--seccolor);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li{
+            color:var(--bascolor);
+        }
+        body{
+            background-color: var(--lightcolor);
+        }
+        a{
+            text-decoration: none;
+            color:var(--txtcolor);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
